@@ -43,6 +43,20 @@ public class CalculatorTest {
     }
 
     @Test
+    public void TestPower() {
+        String exp = Double.toString(1.1 * 1.1 * 1.1);
+        assertEquals(exp, Calculator.calculate("1.1 ^ 3"));
+    }
+
+    @Test
+    public void TestRoot() {
+        double exp = 5.0;
+        assertEquals(exp,
+                     Double.parseDouble(Calculator.calculate("125 sqr 3")),
+                0.000001);
+    }
+
+    @Test
     public void TestWrongNumberOfArguments() {
         try {
             Calculator.calculate("1.1 /");

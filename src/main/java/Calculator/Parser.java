@@ -31,6 +31,12 @@ public class Parser {
                 case "mod" :
                     lastValue = Computer.mod(arg1, arg2);
                     break;
+                case "sqr" :
+                    lastValue = Computer.root(arg1, arg2);
+                    break;
+                case "^":
+                    lastValue = Computer.power(arg1, arg2);
+                    break;
                 default:
                     throw new IllegalArgumentException("Wrong operation");
             }
