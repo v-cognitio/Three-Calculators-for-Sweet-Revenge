@@ -25,6 +25,12 @@ public class Parser {
                 case "/" :
                     lastValue = Computer.division(arg1, arg2);
                     break;
+                case "^" :
+                    lastValue = Computer.xor(arg1, arg2);
+                    break;
+                case "%" :
+                    lastValue = Computer.mod(arg1, arg2);
+                    break;
                 default:
                     throw new IllegalArgumentException("Wrong operation");
             }
