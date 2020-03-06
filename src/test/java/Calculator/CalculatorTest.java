@@ -37,6 +37,12 @@ public class CalculatorTest {
     }
 
     @Test
+    public void TestModing() {
+        String exp = Double.toString(1.1 % -3);
+        assertEquals(exp, Calculator.calculate("1.1 % -3"));
+    }
+
+    @Test
     public void TestWrongNumberOfArguments() {
         try {
             Calculator.calculate("1.1 /");

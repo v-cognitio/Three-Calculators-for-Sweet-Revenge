@@ -28,6 +28,9 @@ public class Parser {
                 case "^" :
                     lastValue = Computer.xoring(arg1, arg2);
                     break;
+                case "%" :
+                    lastValue = Computer.moding(arg1, arg2);
+                    break;
                 default:
                     throw new IllegalArgumentException("Wrong operation");
             }

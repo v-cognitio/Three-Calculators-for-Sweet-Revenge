@@ -21,4 +21,8 @@ public class Computer {
     public static Double xoring(Double arg1, Double arg2) {
         return (double) (arg1.intValue() ^ arg2.intValue());
     }
+
+    public static Double moding(Double arg1, Double arg2) {
+        return arg1 % arg2;
+    }
 }
