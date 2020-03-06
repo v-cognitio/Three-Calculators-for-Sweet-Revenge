@@ -26,10 +26,10 @@ public class Parser {
                     lastValue = Computer.division(arg1, arg2);
                     break;
                 case "^" :
-                    lastValue = Computer.xoring(arg1, arg2);
+                    lastValue = Computer.xor(arg1, arg2);
                     break;
                 case "%" :
-                    lastValue = Computer.moding(arg1, arg2);
+                    lastValue = Computer.mod(arg1, arg2);
                     break;
                 default:
                     throw new IllegalArgumentException("Wrong operation");

@@ -18,11 +18,11 @@ public class Computer {
         return arg1 / arg2;
     }
 
-    public static Double xoring(Double arg1, Double arg2) {
+    public static Double xor(Double arg1, Double arg2) {
         return (double) (arg1.intValue() ^ arg2.intValue());
     }
 
-    public static Double moding(Double arg1, Double arg2) {
+    public static Double mod(Double arg1, Double arg2) {
         return arg1 % arg2;
     }
 }
