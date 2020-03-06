@@ -25,10 +25,10 @@ public class Parser {
                 case "/" :
                     lastValue = Computer.division(arg1, arg2);
                     break;
-                case "^" :
+                case "xor" :
                     lastValue = Computer.xor(arg1, arg2);
                     break;
-                case "%" :
+                case "mod" :
                     lastValue = Computer.mod(arg1, arg2);
                     break;
                 default:
