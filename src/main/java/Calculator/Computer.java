@@ -29,4 +29,8 @@ public class Computer {
     public static Double power(Double arg1, Double arg2) {
         return java.lang.Math.pow(arg1, arg2);
     }
+
+    public static Double root(Double arg1, Double arg2) {
+        return java.lang.Math.pow(arg1, 1.0 / arg2);
+    }
 }

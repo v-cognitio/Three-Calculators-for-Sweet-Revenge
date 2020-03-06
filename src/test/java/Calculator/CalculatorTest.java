@@ -49,6 +49,14 @@ public class CalculatorTest {
     }
 
     @Test
+    public void TestRoot() {
+        double exp = 5.0;
+        assertEquals(exp,
+                     Double.parseDouble(Calculator.calculate("125 sqr 3")),
+                0.000001);
+    }
+
+    @Test
     public void TestWrongNumberOfArguments() {
         try {
             Calculator.calculate("1.1 /");
