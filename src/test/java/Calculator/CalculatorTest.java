@@ -33,13 +33,13 @@ public class CalculatorTest {
     @Test
     public void TestXor() {
         String exp = Double.toString(1 ^ -3);
-        assertEquals(exp, Calculator.calculate("1.1 ^ -3"));
+        assertEquals(exp, Calculator.calculate("1.1 xor -3"));
     }
 
     @Test
     public void TestMod() {
         String exp = Double.toString(1.1 % -3);
-        assertEquals(exp, Calculator.calculate("1.1 % -3"));
+        assertEquals(exp, Calculator.calculate("1.1 mod -3"));
     }
 
     @Test
