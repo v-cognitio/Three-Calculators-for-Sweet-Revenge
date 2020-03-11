@@ -10,24 +10,28 @@ public class CalculatorTest {
     public void TestAddition() {
         String exp = Double.toString(1.1 + -3);
         assertEquals(exp, Calculator.calculate("1.1 + -3"));
+        assertEquals("1/2", Calculator.calculate("fractions 1/4 + 1/4"));
     }
 
     @Test
     public void TestSubtraction() {
         String exp = Double.toString(1.1 - -3);
         assertEquals(exp, Calculator.calculate("1.1 - -3"));
+        assertEquals("3/2", Calculator.calculate("fractions 7/4 - 1/4"));
     }
 
     @Test
     public void TestMultiplication() {
         String exp = Double.toString(1.1 * -3);
         assertEquals(exp, Calculator.calculate("1.1 * -3"));
+        assertEquals("1/2", Calculator.calculate("fractions 8/8 * 1/2"));
     }
 
     @Test
     public void TestDivision() {
         String exp = Double.toString(1.1 / -3);
         assertEquals(exp, Calculator.calculate("1.1 / -3"));
+        assertEquals("4/1", Calculator.calculate("fractions 8/4 / 1/2"));
     }
 
     @Test
