@@ -112,3 +112,9 @@ fabric.properties
 .idea
 /screenshots
 /doc
+
+# SecondCalculator.Calculator-Software_development_methods_labs
+SecondCalculator.Calculator-Software_development_methods_labs/*.xml
+SecondCalculator.Calculator-Software_development_methods_labs/_mac
+SecondCalculator.Calculator-Software_development_methods_labs/codestyles
+!SecondCalculator.Calculator-Software_development_methods_labs/pom.xml

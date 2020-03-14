@@ -1,4 +1,4 @@
-import Calculator.*;
+import SecondCalculator.Calculator.Fraction;
 
 public class Application {
 
