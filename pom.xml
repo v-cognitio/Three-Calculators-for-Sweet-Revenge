@@ -33,9 +33,15 @@
             <artifactId>SecondCalculator</artifactId>
             <version>1.1</version>
         </dependency>
+        <dependency>
+            <groupId>v_cognitio</groupId>
+            <artifactId>ThirdCalculator</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
     <modules>
         <module>Calculator-Software_development_methods_labs</module>
+        <module>Calc</module>
     </modules>
 
 
