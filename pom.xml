@@ -6,7 +6,7 @@
 
     <groupId>v_cognitio</groupId>
     <artifactId>instruments1</artifactId>
-    <version>1.2</version>
+    <version>2.0</version>
     <packaging>pom</packaging>
     <build>
         <plugins>
