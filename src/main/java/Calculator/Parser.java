@@ -35,56 +35,62 @@ public class Parser {
             String operation;
             if (fractionMode) {
                 operation = args[2].trim();
-            }
-            else {
+            } else {
                 operation = args[1].trim();
             }
             switch (operation) {
-                case "+" :
+                case "+":
                     if (fractionMode) {
                         lastValue = Calculator.addFractions(frc1, frc2).toString();
                         break;
                     }
                     lastValue = Computer.addition(arg1, arg2).toString();
                     break;
-                case "-" :
+                case "-":
                     if (fractionMode) {
                         lastValue = Calculator.subFractions(frc1, frc2).toString();
                         break;
                     }
                     lastValue = Computer.subtraction(arg1, arg2).toString();
                     break;
-                case "*" :
+                case "*":
                     if (fractionMode) {
                         lastValue = Calculator.multFractions(frc1, frc2).toString();
                         break;
                     }
                     lastValue = Computer.multiplication(arg1, arg2).toString();
                     break;
-                case "/" :
+                case "/":
                     if (fractionMode) {
                         lastValue = Calculator.divFractions(frc1, frc2).toString();
                         break;
                     }
                     lastValue = Computer.division(arg1, arg2).toString();
                     break;
-                case "xor" :
-                    lastValue = Computer.xor(arg1, arg2).toString();
-                    break;
-                case "mod" :
-                    lastValue = Computer.mod(arg1, arg2).toString();
-                    break;
-                case "sqr" :
-                    lastValue = Computer.root(arg1, arg2).toString();
-                    break;
+                case "xor":
+                    if (!fractionMode) {
+                        lastValue = Computer.xor(arg1, arg2).toString();
+                        break;
+                    }
+                case "mod":
+                    if (!fractionMode) {
+                        lastValue = Computer.mod(arg1, arg2).toString();
+                        break;
+                    }
+                case "sqr":
+                    if (!fractionMode) {
+                        lastValue = Computer.root(arg1, arg2).toString();
+                        break;
+                    }
                 case "^":
-                    lastValue = Computer.power(arg1, arg2).toString();
-                    break;
+                    if (!fractionMode) {
+                        lastValue = Computer.power(arg1, arg2).toString();
+                        break;
+                    }
                 default:
                     throw new IllegalArgumentException("Wrong operation");
             }
-        }
-        catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Operands aren't numbers");
         }
 
